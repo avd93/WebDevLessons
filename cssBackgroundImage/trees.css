@@ -1,0 +1,67 @@
+/* Tutorial link:
+ *	https://www.w3schools.com/cssref/pr_background-image.asp
+ */
+
+#border{
+	border: 1px solid black;
+	background-color: #ecf9ec;
+}
+/* Background - after this was not working I determined that the DOM sees 
+ *  this div element as 'empty' unless a height is specified or content 
+ *	is placed, (obviously), and will not render until content extends far 
+ *	enough. 
+ */
+#background{
+	background: url(TreesTextureDrawing.png);
+	height: 1500px;
+}
+
+/* background-image - functions same as background. Here are some 
+ *	observations:
+ * 	background-repeat default value is repeat.
+ *	background-size works similarly to no-repeat, and seems to negate 
+ * 	repeat
+ */
+#backgroundImg{
+	background-image: url(TreesTextureDrawing.png);
+	height: 1500px;
+	background-size: cover;			
+	opacity: .55;	
+}
+#linear-grad{
+	background-image: linear-gradient(#ecf9f2,#ecf9ec,#79d279);
+	height: 1500px;
+}
+#radial-grad{
+	background-image: repeating-radial-gradient(#ecf9f2,#ecf9ec,#79d279);
+	height: 1500px;
+}
+#linear-grad-combo{
+	background-image: url(TreesTextureSillouhette.png),linear-gradient(#ecf9f2,#ecf9ec,#79d279);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	display: inline-block; /* default is block, which causes float elements to render outside of the background div area instead of over it. Inline-block allows for this super-imposed behavior. */
+	
+}
+
+.imgBox{
+	width: 50%; /* % of viewport width?*/
+	border: 5px solid #194d19;
+	border-radius: 10px;
+	overflow: hidden;
+	background-color: #133913;
+	margin-left: 50px;
+	margin-bottom: 20px;
+}
+.imgBox img{
+	max-width: 100%;
+	margin-top: 2px;
+	border-radius: 10px;
+}
+
+.imgShorten{
+	width: 30%;
+	float: right;
+	margin-right: 50px;
+}
