@@ -37,7 +37,7 @@
 	height: 1500px;
 }
 #linear-grad-combo{
-	background-image: url(TreesTextureSillouhette.png),linear-gradient(#ecf9f2,#ecf9ec,#79d279);
+	background-image: url(imgs/TreesTextureSillouhette.png),linear-gradient(#ecf9f2,#ecf9ec,#79d279);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: bottom right;
