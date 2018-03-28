@@ -10,10 +10,27 @@
 	<p>The silly little dog wanted most to only ever be chasing sticks. Chase and chase with no end of his obsession in sight.</p>
 	<div id="linear-grad-combo">
 		<div class="imgBox">
-			<img src="furrmonster.jpg"></img>
+			<img src="imgs/furrmonster.jpg"></img>
 		</div>
-		<div class="imgBox imgShorten clearfix">
-			<img src="LouiePersuasion.jpg"></img>
+		<h2>background and background-image CSS properties</h2>
+		<div class="text-block row-sibling">
+			<h3>First Lesson: background != full component</h3>
+			<p>After following the W3Schools tutorial, I found that my example was not working. At all. What I then realized was that the background image doesn't count as an html element, and since I hadn't set a default height or provided any additional content for the foreground, the browser was essentially rendering an empty div component. This was fixed by specifying a background-image or background height until content was added to define the height dynamically.</p>
+
+			<h3> Second Lesson: A few simple observations </h3>
+			<ul>
+				<li>background-repeat default value is repeat.</li>
+				<li>background-size works similarly to no-repeat, and seems to negate  repeat</li>
+			</ul>
+
+			<h3> Third Lesson: use display to avoid positioning struggles </h3>
+			<p>Each object has the display property which in turn has the default value: 'block'. If the display value for background or background-image isn't changed, then the 'block' value will cause any float items to render outside of the background div area instead of over it. Using inline-block, on the other hand, allows for this super-imposed behavior.</p>
+
+			<h3> Fourth Lesson: fun to play with but aesthetically challenging</h3>
+			<p>While it has been fun playing with this property, it also presents a greater aesthetic challenge. All the images and colors worked out well, but adding text that was readable and still looks nice presented more of a challenge.</p>
+		</div>
+		<div class="imgBox imgShorten">
+			<img src="imgs/LouiePersuasion.jpg"></img>
 		</div>
 	</div><!-- #linear-grad-combo -->
 	</div><!-- #border -->
