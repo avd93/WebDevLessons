@@ -64,7 +64,9 @@
 	border: 2px solid #194d19;
 	background-color: #ecf9ec;
 	margin-bottom: 10px;
+	opacity: 0.85;
 }
+
 .row-sibling{
 	width: 60%;
 }
